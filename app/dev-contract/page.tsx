@@ -57,10 +57,11 @@ export default function DevContractPage() {
             <p className="text-zinc-300">
               Email:{" "}
               <a
-                href="mailto:krrish.r26426@nst.rishihood.edu.in"
+                href="mailto:
+                "
                 className="text-amber-300 hover:underline"
               >
-                krrish.r26426@nst.rishihood.edu.in
+                krrishska@gmail.com
               </a>
             </p>
             <p className="text-xs text-zinc-400 italic pt-1">
@@ -273,7 +274,7 @@ export default function DevContractPage() {
                   Printed Name: <span className="text-white font-semibold">Krrish Raj</span>
                 </div>
                 <div className="border-b border-white/30 py-1 text-zinc-300">
-                  Email: krrish.r26426@nst.rishihood.edu.in
+                  Email: krrishska@gmail.com
                 </div>
                 <div className="border-b border-white/30 py-1 text-zinc-300">
                   Date: 22 September 2026

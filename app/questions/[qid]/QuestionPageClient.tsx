@@ -47,9 +47,9 @@ export const QuestionPageClient: React.FC<QuestionPageClientProps> = ({ qid }) =
     setIsSurpriseModalOpen(false);
     setSelectedOptionIndex(null);
 
-    // If on stage 15, unlock and navigate to finale
+    // If on stage 15, unlock all 15 stages and navigate to finale
     if (stageIndex >= QUESTIONS_DATA.length - 1) {
-      unlockStage(14);
+      unlockStage(15);
       router.push("/finale");
       return;
     }

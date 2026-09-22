@@ -48,6 +48,8 @@ export const GrandFinaleReveal: React.FC<GrandFinaleRevealProps> = ({
   const handleOpenGrandEnvelope = () => {
     try {
       localStorage.setItem("aisha_bday_finale_opened", "true");
+      document.cookie =
+        "aisha_bday_finale_opened=true; path=/; max-age=31536000; SameSite=Lax";
     } catch {
       // Storage safety
     }
@@ -82,6 +84,10 @@ export const GrandFinaleReveal: React.FC<GrandFinaleRevealProps> = ({
   const handleReplayClick = () => {
     try {
       localStorage.removeItem("aisha_bday_finale_opened");
+      localStorage.setItem("aisha_bday_unlocked", "0");
+      document.cookie = "aisha_bday_finale_opened=; path=/; max-age=0;";
+      document.cookie =
+        "aisha_bday_unlocked=0; path=/; max-age=31536000; SameSite=Lax";
     } catch {
       // Storage safety
     }

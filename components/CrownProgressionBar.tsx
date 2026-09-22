@@ -198,14 +198,15 @@ export const CrownProgressionBar: React.FC<CrownProgressionBarProps> = ({
             <div className="pt-6 border-t border-white/10 text-center space-y-3">
               <div>
                 <p className="text-xs font-editorial-meta text-amber-200 mb-0.5">
-                  Unlocked: {unlockedStageIndex + 1} of 15 Envelopes
+                  Unlocked: {Math.min(unlockedStageIndex + 1, 15)} of 15 Envelopes
                 </p>
                 <p className="text-[11px] text-white/50 font-mono">
-                  Crown Level: {QUESTIONS_DATA[unlockedStageIndex]?.crownProgression || "👑"}
+                  Crown Level:{" "}
+                  {QUESTIONS_DATA[Math.min(unlockedStageIndex, 14)]?.crownProgression || "👑"}
                 </p>
               </div>
 
-              {unlockedStageIndex >= 14 && (
+              {unlockedStageIndex >= 15 && (
                 <button
                   onClick={() => {
                     setDrawerOpen(false);
