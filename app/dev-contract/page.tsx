@@ -37,9 +37,11 @@ export default function DevContractPage() {
           </p>
         </header>
 
+
         {/* Preamble */}
         <p className="text-sm sm:text-base text-zinc-300">
-          This Independent Contractor Agreement (the &ldquo;Agreement&rdquo;) is entered into on this _____ day of ______________, 2026 (the &ldquo;Effective Date&rdquo;), by and between:
+          This Independent Contractor Agreement (the &ldquo;Agreement&rdquo;) is entered into on this 22nd day of September
+          , 2026 (the &ldquo;Effective Date&rdquo;), by and between:
         </p>
 
         {/* Parties Grid */}
