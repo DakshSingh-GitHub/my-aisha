@@ -171,6 +171,9 @@ export default function DevContractPage() {
             <strong className="text-zinc-100">Payment Terms:</strong> Invoices are due and payable within 14 calendar days of receipt.
           </p>
           <p className="text-zinc-300">
+            <strong className="text-zinc-100">Fee Structure &amp; Courtesy Concession:</strong> Individual phase rates are itemized in Schedule A totaling 8,637 INR. In recognition of this private celebratory engagement, Contractor has applied a 100% full promotional courtesy waiver (-8,637 INR), establishing the effective net payable amount as 0 INR.
+          </p>
+          <p className="text-zinc-300">
             <strong className="text-zinc-100">Late Payments &amp; Suspension:</strong> Unpaid invoices past the due date may accrue interest at 1.5% per month (or the maximum permitted by applicable law). Contractor reserves the right to pause active development, staging environments, and repository synchronization if invoices remain overdue.
           </p>
         </section>
@@ -231,6 +234,22 @@ export default function DevContractPage() {
           </h2>
           <p className="text-zinc-300">
             This Agreement shall be governed by and construed under the laws of India. Any disputes arising under or in connection with this Agreement shall be subject to the exclusive jurisdiction of the competent courts in Uttar Pradesh / New Delhi, India.
+          </p>
+        </section>
+
+        {/* Section 10 */}
+        <section className="space-y-3 text-sm sm:text-base bg-[#190e25] border border-amber-400/20 p-5 rounded-xl">
+          <h2 className="text-base sm:text-lg font-editorial-heading font-medium text-amber-200">
+            10. Mandatory In-App Billing Disclosure &amp; Personal-Use Compliance Protocol
+          </h2>
+          <p className="text-zinc-300">
+            <strong className="text-zinc-100">10.1 Commercial Valuation Disclosure Mandate:</strong> Under the Contractor&apos;s standard engineering compliance and open-source licensing protocol, any software application, customized website, or interactive digital platform commissioned or deployed for private, individual, or personal-use celebrations is strictly required to incorporate an accessible, embedded statement of developmental scope, commercial valuation, and phase billing.
+          </p>
+          <p className="text-zinc-300">
+            <strong className="text-zinc-100">10.2 Professionalism &amp; Valuation Integrity:</strong> The explicit presentation of development rates, milestone schedules, and associated courtesy waivers within the deployed web application serves as a standard transparent auditing measure to establish the verified commercial fair-market value of bespoke engineering deliverables, validate MIT licensing provenance, and prevent informal undervaluation of technical labor. Such in-app disclosure constitutes mandatory professional compliance and shall under no circumstances be construed as informal, inappropriate, or unprofessional conduct.
+          </p>
+          <p className="text-zinc-300">
+            <strong className="text-zinc-100">10.3 Institutional &amp; Enterprise Webapp Exemption:</strong> This mandatory in-app billing publication policy applies exclusively to individual, private, and personal-use web deployments. Web applications and enterprise platforms developed for registered organizations, institutional bodies, corporate entities, or commercial clients are explicitly exempt from embedded billing disclosures and remain governed under separate, confidential corporate Master Service Agreements (MSAs).
           </p>
         </section>
 
@@ -321,7 +340,7 @@ export default function DevContractPage() {
                   <th className="py-3 px-4">Phase / Milestone</th>
                   <th className="py-3 px-4">Deliverable Description</th>
                   <th className="py-3 px-4">Target Date</th>
-                  <th className="py-3 px-4 text-right">Fee (INR / USD)</th>
+                  <th className="py-3 px-4 text-right">Standard Fee (INR)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5 font-mono text-xs text-zinc-300">
@@ -331,18 +350,21 @@ export default function DevContractPage() {
                     Project setup, boilerplate architecture, and schema design
                   </td>
                   <td className="py-3 px-4 text-zinc-400">Day 1</td>
-                  <td className="py-3 px-4 text-right text-emerald-400 font-semibold">
-                    0 INR
+                  <td className="py-3 px-4 text-right text-zinc-100 font-semibold">
+                    840 INR
                   </td>
                 </tr>
                 <tr className="hover:bg-white/2">
                   <td className="py-3 px-4 font-semibold text-amber-200">Phase 2</td>
                   <td className="py-3 px-4 font-sans text-zinc-200">
-                    Core backend logic, database endpoints, and migrations
+                    Core backend logic, database endpoints, and migrations{" "}
+                    <span className="text-[11px] text-amber-300/80 font-mono italic">
+                      (minimal logic used)
+                    </span>
                   </td>
                   <td className="py-3 px-4 text-zinc-400">Day 1</td>
-                  <td className="py-3 px-4 text-right text-emerald-400 font-semibold">
-                    0 INR
+                  <td className="py-3 px-4 text-right text-zinc-100 font-semibold">
+                    3,999 INR
                   </td>
                 </tr>
                 <tr className="hover:bg-white/2">
@@ -351,8 +373,8 @@ export default function DevContractPage() {
                     Frontend UI components, state management, and API integration
                   </td>
                   <td className="py-3 px-4 text-zinc-400">Day 1</td>
-                  <td className="py-3 px-4 text-right text-emerald-400 font-semibold">
-                    0 INR
+                  <td className="py-3 px-4 text-right text-zinc-100 font-semibold">
+                    2,199 INR
                   </td>
                 </tr>
                 <tr className="hover:bg-white/2">
@@ -361,12 +383,42 @@ export default function DevContractPage() {
                     Testing, bug fixing, final build, and GitHub repository handoff
                   </td>
                   <td className="py-3 px-4 text-zinc-400">Day 1</td>
-                  <td className="py-3 px-4 text-right text-emerald-400 font-semibold">
-                    0 INR
+                  <td className="py-3 px-4 text-right text-zinc-100 font-semibold">
+                    1,599 INR
                   </td>
                 </tr>
               </tbody>
             </table>
+          </div>
+
+          {/* Total Bill, Discounted Bill & Commercial Reconciliation */}
+          <div className="bg-[#190e25] border border-amber-400/30 rounded-xl p-5 space-y-3 font-mono text-xs sm:text-sm shadow-inner">
+            <h3 className="font-editorial-meta text-xs tracking-[0.18em] text-amber-300 uppercase font-semibold pb-1 border-b border-white/10">
+              Commercial Valuation &amp; Billing Reconciliation
+            </h3>
+            <div className="flex items-center justify-between text-zinc-300 pt-1">
+              <span className="font-sans">Total Gross Valuation (Sum of Phases 1–4):</span>
+              <span className="text-zinc-100 font-semibold">8,637 INR</span>
+            </div>
+            <div className="flex items-center justify-between text-rose-300">
+              <span className="font-sans">
+                Full Promotional Courtesy Waiver / Client Concession (-100%):
+              </span>
+              <span className="font-semibold">-8,637 INR</span>
+            </div>
+            <div className="border-t border-white/10 pt-3 flex items-center justify-between text-sm sm:text-base">
+              <span className="font-editorial-heading font-medium text-amber-200">
+                Net Effective Bill Payable:
+              </span>
+              <span className="font-bold text-emerald-400 text-base sm:text-lg">
+                0 INR
+              </span>
+            </div>
+            <div className="pt-3 border-t border-white/5">
+              <p className="text-[11px] font-sans text-zinc-400 leading-relaxed">
+                <strong className="text-amber-300">Auditing &amp; Transparency Notice:</strong> In accordance with <span className="text-amber-200 underline">Section 10 (Mandatory In-App Billing Disclosure Protocol)</span>, this project explicitly displays its baseline commercial valuation (8,637 INR) to formally establish engineering market rates and protect technical intellectual property. A 100% courtesy discount has been executed by the Contractor, rendering the final effective invoice obligation as <strong>0 INR</strong>.
+              </p>
+            </div>
           </div>
         </section>
 
