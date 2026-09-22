@@ -171,7 +171,7 @@ export default function DevContractPage() {
             <strong className="text-zinc-100">Payment Terms:</strong> Invoices are due and payable within 14 calendar days of receipt.
           </p>
           <p className="text-zinc-300">
-            <strong className="text-zinc-100">Fee Structure &amp; Courtesy Concession:</strong> Individual phase rates are itemized in Schedule A totaling 8,637 INR. In recognition of this private celebratory engagement, Contractor has applied a 100% full promotional courtesy waiver (-8,637 INR), establishing the effective net payable amount as 0 INR.
+            <strong className="text-zinc-100">Fee Structure &amp; Courtesy Waiver:</strong> Individual phase rates are itemized in Schedule A totaling 8,637 INR. Contractor has applied a courtesy waiver (-8,637 INR), establishing the effective net payable amount as 0 INR.
           </p>
           <p className="text-zinc-300">
             <strong className="text-zinc-100">Late Payments &amp; Suspension:</strong> Unpaid invoices past the due date may accrue interest at 1.5% per month (or the maximum permitted by applicable law). Contractor reserves the right to pause active development, staging environments, and repository synchronization if invoices remain overdue.
@@ -402,7 +402,7 @@ export default function DevContractPage() {
             </div>
             <div className="flex items-center justify-between text-rose-300">
               <span className="font-sans">
-                Full Promotional Courtesy Waiver / Client Concession (-100%):
+                Courtesy Waiver:
               </span>
               <span className="font-semibold">-8,637 INR</span>
             </div>
@@ -416,7 +416,7 @@ export default function DevContractPage() {
             </div>
             <div className="pt-3 border-t border-white/5">
               <p className="text-[11px] font-sans text-zinc-400 leading-relaxed">
-                <strong className="text-amber-300">Auditing &amp; Transparency Notice:</strong> In accordance with <span className="text-amber-200 underline">Section 10 (Mandatory In-App Billing Disclosure Protocol)</span>, this project explicitly displays its baseline commercial valuation (8,637 INR) to formally establish engineering market rates and protect technical intellectual property. A 100% courtesy discount has been executed by the Contractor, rendering the final effective invoice obligation as <strong>0 INR</strong>.
+                <strong className="text-amber-300">Auditing &amp; Transparency Notice:</strong> In accordance with <span className="text-amber-200 underline">Section 10 (Mandatory In-App Billing Disclosure Protocol)</span>, this project explicitly displays its baseline commercial valuation (8,637 INR) to formally establish engineering market rates and protect technical intellectual property. A courtesy waiver has been applied by the Contractor, rendering the final effective invoice obligation as <strong>0 INR</strong>.
               </p>
             </div>
           </div>
