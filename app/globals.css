@@ -1,26 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-heading: 'Cormorant Garamond', Garamond, Georgia, serif;
+  --font-subtext: 'EB Garamond', Garamond, Georgia, serif;
+  --font-meta: 'Cinzel', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  background-color: #0c0714;
+  color: #fdf2f8;
+  overflow-x: hidden;
+}
+
+/* Regal & Editorial Typography Classes */
+.font-editorial-heading {
+  font-family: var(--font-heading);
+  letter-spacing: 0.02em;
+}
+
+.font-editorial-subtext {
+  font-family: var(--font-subtext);
+  font-style: italic;
+}
+
+.font-editorial-meta {
+  font-family: var(--font-meta);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Backward-compatible classes */
+.font-royal-title {
+  font-family: var(--font-heading);
+}
+
+.font-royal-serif {
+  font-family: var(--font-subtext);
+}
+
+.font-royal-script {
+  font-family: var(--font-subtext);
+  font-style: italic;
+}
+
+/* Clean Solid Luxury Card (No Glow, No Glassmorphism) */
+.luxury-card {
+  background-color: #170d24;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.6);
+}
+
+.luxury-card-elevated {
+  background-color: #1c102c;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8);
+}
+
+/* 3D Envelope Transformations */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+/* Smooth Minimal Animations (No Glow) */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+/* Custom Smooth Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0714;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.5);
 }
