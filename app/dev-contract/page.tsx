@@ -388,6 +388,16 @@ export default function DevContractPage() {
                     1,599 INR
                   </td>
                 </tr>
+                <tr className="hover:bg-white/2">
+                  <td className="py-3 px-4 font-semibold text-amber-200">Phase 4</td>
+                  <td className="py-3 px-4 font-sans text-zinc-200">
+                    Overworking Charges
+                  </td>
+                  <td className="py-3 px-4 text-zinc-400">Day 2</td>
+                  <td className="py-3 px-4 text-right text-zinc-100 font-semibold">
+                    2,099 INR
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -399,13 +409,13 @@ export default function DevContractPage() {
             </h3>
             <div className="flex items-center justify-between text-zinc-300 pt-1">
               <span className="font-sans">Total Gross Valuation (Sum of Phases 1–4):</span>
-              <span className="text-zinc-100 font-semibold">8,637 INR</span>
+              <span className="text-zinc-100 font-semibold">10,736 INR</span>
             </div>
             <div className="flex items-center justify-between text-rose-300">
               <span className="font-sans">
                 Courtesy Waiver:
               </span>
-              <span className="font-semibold">-8,637 INR</span>
+              <span className="font-semibold">-10,736 INR</span>
             </div>
             <div className="border-t border-white/10 pt-3 flex items-center justify-between text-sm sm:text-base">
               <span className="font-editorial-heading font-medium text-amber-200">
